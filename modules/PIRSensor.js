@@ -7,16 +7,17 @@
  * - change: emit whether or not the PIR sensor detects active motion
  *
  * Example:
- *
- * let detector = new PIRSenor({
- *   pin: NodeMCU.D0, // Or input pin
- *   calibrationTimeout: 30000, // Time to calibrate
- *   sensistivity: 9000, // Time to stablize motion
- *  });
- * detector.on('ready', () => console.log("Calibration complete"));
- * detector.on('change', change => {
- *   console.log(change); // { value: true, timeInState: 10000, time: 20000 }
- * });
+```
+let detector = new PIRSenor({
+  pin: NodeMCU.D0, // Or input pin
+  calibrationTimeout: 30000, // Time to calibrate
+  sensistivity: 9000, // Time to stablize motion
+ });
+detector.on('ready', () => console.log("Calibration complete"));
+detector.on('change', change => {
+  console.log(change); // { value: true, timeInState: 10000, time: 20000 }
+});
+```
  */
 class PIRSensor {
   constructor(options) {
@@ -106,6 +107,6 @@ class PIRSensor {
 }
 
 // Extend the object impl for event based mixin
-Object.assign(PIRSensor.prototype, Object.prototype);
+Object.assign(PIRSensor, Object.prototype);
 
 exports.PIRSensor = PIRSensor;
