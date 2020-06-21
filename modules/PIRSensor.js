@@ -108,4 +108,4 @@ class PIRSensor {
 // Extend the object impl for event based mixin
 Object.assign(PIRSensor.prototype, Object.prototype);
 
-exports.PIRSensor;
+exports.PIRSensor = PIRSensor;
