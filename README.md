@@ -9,3 +9,5 @@ The Esprunio Web IDE supports Cross-Origin module loading.
 ``` javascript
 const PIRSensor = require("https://github.com/philcali/espruino/modules/PIRSensor.js");
 ```
+
+[1]: https://www.espruino.com/
