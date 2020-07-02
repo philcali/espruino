@@ -12,3 +12,12 @@ Let's face it: configuring WiFi on an ESP is quite unnecessary.
 Esprunio tooling already supports WiFi connect and remote
 flashing. This recipe can be copied to embed firmware that allows
 edge re-configuration for dynamic device gateways.
+
+## Screenshots
+
+![Configure][1]
+
+![Scan][2]
+
+[1]: configuration.png
+[2]: scan.png
