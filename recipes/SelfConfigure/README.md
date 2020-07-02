@@ -19,5 +19,5 @@ edge re-configuration for dynamic device gateways.
 
 ![Scan][2]
 
-[1]: configuration.png
+[1]: configure.png
 [2]: scan.png
